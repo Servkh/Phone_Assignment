@@ -6,17 +6,17 @@ public class Galaxy extends Phone implements Ringable {
     }
     @Override
     public String ring() {
-    	return ("RingeTone:" + " " + this.getRingTone());
+    	 return ("Galaxy" +" " +this.getVersionNumber() + " " +  "says" + " " + this.getRingTone());
     }
     @Override
     public String unlock() {
-    	return ("Unlocking: Finger print and pass code");
+    	return ("Galaxy" + " " + this.getVersionNumber() + " " + "Unlocking via Finger print and pass code");
     }
     @Override
     public void displayInfo() {
-    	System.out.println("Carrier:" + "  " + this.getCarrier()); 
-    	System.out.println("Battery Percentage:" + "  " + this.getBatteryPercentage());
-    	System.out.println("Version:" + "  " + this.getVersionNumber());
+    	System.out.println("Galaxy" + " " + this.getVersionNumber() + " from " + this.getCarrier()); 
+    	System.out.println("Galaxy" + " " + this.getVersionNumber() +" " +"Battery Percentage" + " is " + this.getBatteryPercentage());
+//    	System.out.println("Version:" + "  " + this.getVersionNumber());
     	
     }
 }

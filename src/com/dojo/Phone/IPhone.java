@@ -6,17 +6,17 @@ public class IPhone extends Phone implements Ringable {
     }
     @Override
     public String ring() {
-        return ("RingeTone:" + " " + this.getRingTone());
+    	return ("iPhone" + " " + this.getVersionNumber() + " " +  "says" + " " + this.getRingTone());
     }
     @Override
     public String unlock() {
-        return ("Unlocking: Unclok with Face motion and pass code ");
+    	return ("iPhone" + " " + this.getVersionNumber() + " " + "Unlocking via Facial recignition");
     }
     @Override
     public void displayInfo() {
-    	System.out.println("********************************");
-        System.out.println("Carrier:" + "  " + this.getCarrier());
-        System.out.println("Battery Percentage:" + "  " + this.getBatteryPercentage());
-        System.out.println("Version:" + "  " + this.getVersionNumber());
+    	System.out.println("******************************************************");
+    	System.out.println("iPhone" + " " + this.getVersionNumber() + " from " + this.getCarrier()); 
+    	System.out.println("iPhone" + " " + this.getVersionNumber() +" " +"Battery Percentage" + " is " + this.getBatteryPercentage());
+//        System.out.println("Version:" + "  " + this.getVersionNumber());
     }
 }
